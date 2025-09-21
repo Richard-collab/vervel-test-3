@@ -1,0 +1,155 @@
+.container {
+  display: flex;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+}
+
+.sidebar {
+  width: 300px;
+  background-color: #ffffff;
+  border-right: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebarHeader {
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.sidebarHeader h2 {
+  margin: 0 0 15px 0;
+  font-size: 1.2rem;
+}
+
+.fileInputLabel {
+  display: block;
+  padding: 10px 15px;
+  background-color: #0070f3;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.fileInputLabel:hover {
+  background-color: #005bb5;
+}
+.fileInput {
+  display: none;
+}
+
+.fileList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.fileListItem {
+  padding: 12px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.fileListItem:hover {
+  background-color: #f0f0f0;
+}
+
+.fileListItemActive {
+  background-color: #e6f7ff;
+  font-weight: bold;
+  color: #0070f3;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.playerContainer {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.playerContainer h3 {
+  margin-top: 0;
+  word-break: break-all;
+}
+
+.audioPlayer {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.labelContainer {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.labelContainer h4 {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.labelButton {
+  padding: 12px 24px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.labelButton:hover {
+  background-color: #0070f3;
+  color: white;
+  border-color: #0070f3;
+}
+
+.exportButton {
+  margin-top: 40px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.exportButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.exportButton:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.placeholder {
+  text-align: center;
+  color: #888;
+}
+
+.doneMark {
+  color: #28a745;
+  font-size: 1.2rem;
+}
